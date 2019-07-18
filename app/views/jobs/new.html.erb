@@ -1,0 +1,27 @@
+<h1>Create Job</h1>
+
+<%= form_with scope: :job,url: jobs_path, local: true do |form| %>
+  <p>
+    <%= form.label :Company_Name %><br>
+    <%= form.text_field :company_name %>
+  </p>
+
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+
+  <p>
+    <%= form.label :description %><br>
+    <%= form.text_area :description %>
+  </p>
+
+  <p>
+    <%= form.label :experience %><br>
+    <%= form.text_field :experience %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
